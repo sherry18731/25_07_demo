@@ -22,6 +22,25 @@ body {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.hearder {
+  background: linear-gradient(to top, rgba(15, 16, 19, 0) 0%, rgba(15, 16, 19, 0.02) 7%, rgba(15, 16, 19, 0.06) 12%, rgba(15, 16, 19, 0.12) 19%, rgba(15, 16, 19, 0.23) 28%, rgba(15, 16, 19, 0.41) 42%, rgba(15, 16, 19, 0.7) 70%, rgba(15, 16, 19, 0.9) 96%);
+}
+
+/* 初始透明樣式 */
+.transparent-navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+/* 滾動後套用的樣式 */
+.navbar-scrolled {
+  background-color: var(--bs-body-bg); /* Bootstrap 5.3 的主背景色 */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
 /* nav */
 
 .nav-item {
@@ -88,7 +107,6 @@ body {
 	font-size: 16px;
 }
 
-
 @media (max-width: 500px) {
     .fs-xs {
         font-size: 14px !important;
@@ -121,13 +139,33 @@ body {
   font-weight: 900;
 }
 
+.ellipsis {
+overflow:hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
 /* width */
 
 .w-18p {
   width: 18%;
 }
 
+.w-80p {
+  width: 80%;
+}
+
 /* footer */
 .footer-bg {
   background-color: hsl(from var(--footer-bg) h s l);
+}
+
+/* hover */
+
+.card-img-top:hover {
+  opacity: 0.5;
+}
+
+.hover:hover {
+  opacity: 0.5;
 }
