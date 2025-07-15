@@ -50,6 +50,8 @@ var swiper = new Swiper(".mySwiper", {
   loop: true,
   // multipleActiveThumbs: true,
   spaceBetween: 10,
+  centeredSlides: true,
+  slidesPerView: 'auto',
   // slidesPerView: 7.5,
   breakpoints: {
     // 小於 576px (手機)
@@ -84,19 +86,41 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
-swiper2.on('slideChange', function () {
-  const activeIndex = swiper2.realIndex;
-  const thumbnailSlides = document.querySelectorAll('.mySwiper .swiper-slide');
-  const activeThumb = thumbnailSlides[activeIndex];
+// swiper2.on('slideChange', function () {
+//   const activeIndex = swiper2.realIndex;
+//   const thumbnailSlides = document.querySelectorAll('.mySwiper .swiper-slide');
+//   const activeThumb = thumbnailSlides[activeIndex];
 
-  if (activeThumb) {
-    activeThumb.scrollIntoView({
-      behavior: 'smooth',
-      inline: 'start',
-      block: 'nearest'
-    });
-  }
-});
+//   if (activeThumb) {
+//     activeThumb.scrollIntoView({
+//       behavior: 'smooth',
+//       inline: 'start',
+//       block: 'nearest'
+//     });
+//   }
+// });
+
+// swiper2.on('slideChange', function () {
+//   const realIndex = swiper2.realIndex;
+
+//   // 找出目前畫面中，data-swiper-slide-index === realIndex 的縮圖
+//   const thumbnailWrapper = document.querySelector('.mySwiper .swiper-wrapper');
+//   const thumbnailSlides = document.querySelectorAll('.mySwiper .swiper-slide');
+
+//   const activeThumb = Array.from(thumbnailSlides).find(slide => {
+//     return parseInt(slide.dataset.swiperSlideIndex) === realIndex;
+//   });
+
+//   if (activeThumb && thumbnailWrapper) {
+//     // 計算 offsetLeft 使該縮圖貼齊左側
+//     const scrollAmount = activeThumb.offsetLeft;
+//     thumbnailWrapper.scrollTo({
+//       left: scrollAmount,
+//       behavior: 'smooth'
+//     });
+//   }
+// });
+
 
 var swiper = new Swiper(".mySwiperMobile", {
   loop: true,

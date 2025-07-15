@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" id="htmlPage">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- import css -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page_inner.css">
+
+    <title>Document</title>
+</head>
+<style>
+    .bi::before {
+        font-weight: bold !important;
+    }
+
+    .nav-link {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+</style>
+
+<body>
+    <!-- header -->
+    <nav id="mainHeader" class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="mainNavbar">
+        <div class="container-xxl">
+            <div class="d-flex flex-row-reverse align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="https://www.ofiii.com/image/header/desktop/dark/logo.svg" alt=""
+                        style="width: 76px; height: 44px;">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-lg-none">
+                    <a href="#">
+                        <img id="theme-mobile" src="https://www.ofiii.com/image/header/desktop/dark/sun.svg" alt=""
+                            style="width: 24px; height: 24px; cursor: pointer; inset: 30px 20px 80% 90%;"
+                            class="position-absolute" />
+                    </a>
+                </div>
+                <div class="d-lg-none pb-3 my-3 border-bottom">
+                    <div class="d-flex">
+                        <button class="btn btn-secondary rounded-pill me-3">下載 APP</button>
+                        <button class="btn btn-secondary rounded-pill">下載 APP</button>
+                    </div>
+                </div>
+                <ul class="navbar-nav pb-3 pb-lg-0">
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center">
+                            <a class="nav-link active" aria-current="page" href="#">推薦</a>
+                            <i class="bi bi-chevron-right d-lg-none"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center">
+                            <a class="nav-link" aria-current="page" href="#">世界末日來一夏</a>
+                            <i class="bi bi-chevron-right d-lg-none"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center">
+                            <a class="nav-link" aria-current="page" href="#">電視頻道</a>
+                            <i class="bi bi-chevron-right d-lg-none"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center">
+                            <a class="nav-link" aria-current="page" href="#">戲劇</a>
+                            <i class="bi bi-chevron-right d-lg-none"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <div class="row gx-3">
+                    <div class="col">
+                        <a href="#">
+                            <img id="search" src="https://www.ofiii.com/image/header/desktop/dark/search.svg" alt=""
+                                style="width: 24px; height: 24px; cursor: pointer;" />
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img id="media" src="https://www.ofiii.com/image/header/desktop/dark/media.svg" alt=""
+                                style="width: 24px; height: 24px; cursor: pointer;" />
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img id="download" src="https://www.ofiii.com/image/header/desktop/dark/download.svg" alt=""
+                                style="width: 24px; height: 24px; cursor: pointer;" />
+                        </a>
+                    </div>
+                    <div class="col">
+                        <img id="theme" src="https://www.ofiii.com/image/header/desktop/dark/sun.svg" alt=""
+                            style="width: 24px; height: 24px; cursor: pointer;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- layout -->
+    <div class="layout" style="height: 72px;"></div>
+
+    <main>
+        <div class="container py-lg-5">
+            <div class="row">
+                <!-- video -->
+                <div class="col-12 col-lg-8">
+                    <div class="ratio ratio-16x9 mb-3">
+                        <iframe src="https://www.youtube.com/embed/fyGC6ngwid8?si=anCq-YwN1rs5XxWH"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h2 class="fs-4 fw-bold mb-2">【公式】『ちいかわ』第258話「かき氷シロップ」</h2>
+                    <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
+                        <span class="fs-6 fw-bold lh-lg">台視1100台語新聞</span>
+                        <div class="d-flex">
+                            <a href="#" class="text-secondary me-3 d-none d-lg-block"><i
+                                    class="bi bi-arrow-down-square me-2"></i><span>下載 ofiii</span></a>
+                            <a href="#" class="text-secondary me-3 d-flex"><i class="bi bi-heart me-2"></i><span
+                                    class="d-none d-lg-block">收藏</span></a>
+                            <a href="#" class="text-secondary d-flex"><i class="bi bi-share-fill me-2"></i><span
+                                    class="d-none d-lg-block">分享</span></a>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <p>台視整點新聞播報。</p>
+                        <a class="ms-auto" id="toggleMore" data-bs-toggle="collapse" href="#collapseMore" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            顯示更多
+                        </a>
+                    </div>
+                    <div class="collapse py-4" id="collapseMore">
+                        <span>類型：</span><span>綜合</span>
+                    </div>
+                </div>
+                <!-- 節目表 -->
+                <div class="col-12 col-lg-4">
+                    <!-- 分類 -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane"
+                                aria-selected="true">全部頻道</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">頻道分類</button>
+                        </li>
+                    </ul>
+                    <!-- 全部頻道_內頁 -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="py-3 tab-pane fade show active" id="all-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <ul class="d-flex justify-content-around py-2">
+                                <li class="col-3">
+                                    <img class="img-fluid" style="max-height: 50px;"
+                                        src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png" alt="">
+                                </li>
+                                <li class="col-6 d-flex flex-column justify-content-center">
+                                    <p class="mb-1 text-truncate">59 台視新聞</p>
+                                    <div class="text-truncate">
+                                        <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                        <span>台視1500整點新聞</span>
+                                    </div>
+                                </li>
+                                <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                            </ul>
+                            <ul class="d-flex justify-content-around py-2">
+                                <li class="col-3">
+                                    <img class="img-fluid" style="max-height: 50px;"
+                                        src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png" alt="">
+                                </li>
+                                <li class="col-6 d-flex flex-column justify-content-center">
+                                    <p class="mb-1 text-truncate">59 台視新聞</p>
+                                    <div class="text-truncate">
+                                        <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                        <span>台視1500整點新聞</span>
+                                    </div>
+                                </li>
+                                <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                            </ul>
+                            <ul class="d-flex justify-content-around py-2">
+                                <li class="col-3">
+                                    <img class="img-fluid" style="max-height: 50px;"
+                                        src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png" alt="">
+                                </li>
+                                <li class="col-6 d-flex flex-column justify-content-center">
+                                    <p class="mb-1 text-truncate">59 台視新聞</p>
+                                    <div class="text-truncate">
+                                        <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                        <span>台視1500整點新聞</span>
+                                    </div>
+                                </li>
+                                <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                            </ul>
+                            <ul class="d-flex justify-content-around py-2">
+                                <li class="col-3">
+                                    <img class="img-fluid" style="max-height: 50px;"
+                                        src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png" alt="">
+                                </li>
+                                <li class="col-6 d-flex flex-column justify-content-center">
+                                    <p class="mb-1 text-truncate">59 台視新聞</p>
+                                    <div class="text-truncate">
+                                        <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                        <span>台視1500整點新聞</span>
+                                    </div>
+                                </li>
+                                <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                            </ul>
+                        </div>
+                        <!-- 頻道分類_內頁 -->
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <p class="d-inline-flex gap-1">
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample"
+                                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Link with href
+                                </a>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    Button with data-bs-target
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user activates the relevant trigger.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <!-- mobile footer -->
+    <footer class="py-5 d-lg-none footer-bg">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a class="" href="#">
+                    <img id="footer-logo" class="col-5" src="https://www.ofiii.com/image/footer/mobile/dark/logo.png"
+                        alt="">
+                </a>
+                <img id="prove" class="col-1" src="https://www.ofiii.com/image/footer/mobile/dark/ott.png" alt=""
+                    style="width: 48px; height: 48px;">
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center border-bottom py-3">
+                <h6 class="mb-3">下載 ofiii APP</h6>
+                <div class="d-flex">
+                    <a class="me-3" href="#">
+                        <img src="https://www.ofiii.com/image/footer/mobile/ios.png" alt=""
+                            style="width: 120px; height: 36px;">
+                    </a>
+                    <a href="">
+                        <img src="https://www.ofiii.com/image/footer/mobile/ios.png" alt=""
+                            style="width: 120px; height: 36px;">
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center my-3">
+                <i class="bi bi-facebook fs-40 me-3"></i>
+                <i class="bi bi-facebook fs-40 me-3"></i>
+                <i class="bi bi-facebook fs-40"></i>
+            </div>
+            <ul class="d-flex justify-content-center text-secondary fs-14">
+                <li class="border-end pe-2 me-3"><span>版權與商標</span></li>
+                <li class="border-end pe-2 me-3"><span>版權與商標</span></li>
+                <li><span>版權與商標</span></li>
+            </ul>
+            <p class="text-center text-secondary fs-xxs mt-3">Copyright © 2025 ofiii 歐飛 All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- web footer -->
+    <footer class="py-5 d-none d-lg-block footer-bg">
+        <div class="container-xxl">
+            <div class="row border-bottom pb-2 mb-5">
+                <div class="col-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <a class="d-flex flex-column align-items-center mb-4" href="#">
+                            <img id="footer-logo-web" class="col-10"
+                                src="https://www.ofiii.com/image/footer/mobile/dark/logo.png" alt="">
+                        </a>
+                        <img id="prove-lg-web" class="col-6 mb-2"
+                            src="https://www.ofiii.com/image/footer/desktop/dark/ott.png" alt="">
+                        <div class="d-flex justify-content-center my-3 mb-5">
+                            <i class="bi bi-facebook fs-40 me-3"></i>
+                            <i class="bi bi-facebook fs-40 me-3"></i>
+                            <i class="bi bi-facebook fs-40"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 d-flex justify-content-between">
+                    <ul class="d-flex flex-column align-items-start gap-4">
+                        <li class="fw-bold mb-3">推薦</li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                電視頻道
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                大家都在看🔥
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                暑假特典！哆啦A夢到你家
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                暑假特典！蠟筆小新大集合
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                戲劇熱門排行榜
+                            </span></li>
+                    </ul>
+                    <ul class="d-flex flex-column align-items-start gap-4">
+                        <li class="fw-bold mb-3">推薦</li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                電視頻道
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                大家都在看🔥
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                暑假特典！哆啦A夢到你家
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                暑假特典！蠟筆小新大集合
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                戲劇熱門排行榜
+                            </span></li>
+                    </ul>
+                    <ul class="d-flex flex-column align-items-start gap-4">
+                        <li class="fw-bold mb-3">推薦</li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                電視頻道
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                大家都在看🔥
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                暑假特典！哆啦A夢到你家
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                暑假特典！蠟筆小新大集合
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                戲劇熱門排行榜
+                            </span></li>
+                    </ul>
+                    <ul class="d-flex flex-column align-items-start gap-4">
+                        <li class="fw-bold mb-3">推薦</li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                電視頻道
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                大家都在看🔥
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                暑假特典！哆啦A夢到你家
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                暑假特典！蠟筆小新大集合
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                戲劇熱門排行榜
+                            </span></li>
+                    </ul>
+                    <ul class="d-flex flex-column align-items-start gap-4">
+                        <li class="fw-bold mb-3">推薦</li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                電視頻道
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                大家都在看🔥
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                暑假特典！哆啦A夢到你家
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                暑假特典！蠟筆小新大集合
+                            </span></li>
+                        <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                戲劇熱門排行榜
+                            </span></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center text-secondary fs-xs mt-3">Copyright © 2025 ofiii 歐飛 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggleMore = document.getElementById('toggleMore');
+        const collapseEl = document.getElementById('collapseMore');
+
+        // 監聽展開事件
+        collapseEl.addEventListener('shown.bs.collapse', () => {
+            toggleMore.textContent = '顯示更少';
+        });
+
+        // 監聽收起事件
+        collapseEl.addEventListener('hidden.bs.collapse', () => {
+            toggleMore.textContent = '顯示更多';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="all.js"></script>
+</body>
+
+</html>
