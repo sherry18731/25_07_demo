@@ -16,7 +16,7 @@ function toggleTheme() {
 
   if (isDark) {
     html.setAttribute("data-bs-theme", "dark");
-    logo.src = "https://www.ofiii.com/image/header/desktop/dark/logo.svg";
+    logo.src = "/image/light/logo.svg";
     search.src = "https://www.ofiii.com/image/header/desktop/dark/search.svg";
     media.src = "https://www.ofiii.com/image/header/desktop/dark/media.svg";
     download.src = "https://www.ofiii.com/image/header/desktop/dark/download.svg";
@@ -27,7 +27,7 @@ function toggleTheme() {
     proveLgWeb.src = "https://www.ofiii.com/image/footer/desktop/dark/ott.png";
   } else {
     html.setAttribute("data-bs-theme", "light");
-    logo.src = "https://www.ofiii.com/image/header/desktop/light/logo.png";
+    logo.src = "/image/light/logo.svg";
     search.src = "https://www.ofiii.com/image/header/desktop/light/search.svg";
     media.src = "https://www.ofiii.com/image/header/desktop/light/media.svg";
     download.src = "https://www.ofiii.com/image/header/desktop/light/download.svg";

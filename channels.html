@@ -31,11 +31,6 @@
         font-weight: bold !important;
     }
 
-    .px-3rem {
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
-    }
-
     .text-gray {
         color: #666666;
     }
@@ -44,14 +39,6 @@
         color: #999999;
     }
 
-
-    /* .nav-link:hover {
-        color: #fff;
-    }
-
-    button.nav-link .active {
-        color: #fff !important;
-    } */
 </style>
 
 <body>
@@ -60,21 +47,20 @@
         <div class="container-xxl">
             <div class="d-flex flex-row-reverse align-items-center">
                 <a class="navbar-brand" href="#">
-                    <img id="logo" src="https://www.ofiii.com/image/header/desktop/dark/logo.svg" alt=""
-                        style="width: 76px; height: 44px;">
+                    <img id="logo" src="/image/light/logo.svg" alt="" style="width: auto; height: 45px;">
                 </a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="d-lg-none">
                     <a href="#">
-                        <img id="theme-mobile" src="https://www.ofiii.com/image/header/desktop/dark/sun.svg" alt=""
-                            style="width: 24px; height: 24px; cursor: pointer; inset: 30px 20px 80% 90%;"
-                            class="position-absolute" />
+                        <img id="theme-mobile"
+                                src="https://www.ofiii.com/image/header/desktop/dark/sun.svg"
+                                alt=""
+                                style="width: 24px; height: 24px; cursor: pointer; inset: 30px 20px 80% 90%;"
+                                class="position-absolute" />
                     </a>
                 </div>
                 <div class="d-lg-none pb-3 my-3 border-bottom">
@@ -114,24 +100,32 @@
                 <div class="row gx-3">
                     <div class="col">
                         <a href="#">
-                            <img id="search" src="https://www.ofiii.com/image/header/desktop/dark/search.svg" alt=""
+                            <img id="search"
+                                src="https://www.ofiii.com/image/header/desktop/dark/search.svg"
+                                alt=""
                                 style="width: 24px; height: 24px; cursor: pointer;" />
                         </a>
                     </div>
                     <div class="col">
                         <a href="#">
-                            <img id="media" src="https://www.ofiii.com/image/header/desktop/dark/media.svg" alt=""
+                            <img id="media"
+                                src="https://www.ofiii.com/image/header/desktop/dark/media.svg"
+                                alt=""
                                 style="width: 24px; height: 24px; cursor: pointer;" />
                         </a>
                     </div>
                     <div class="col">
                         <a href="#">
-                            <img id="download" src="https://www.ofiii.com/image/header/desktop/dark/download.svg" alt=""
+                            <img id="download"
+                                src="https://www.ofiii.com/image/header/desktop/dark/download.svg"
+                                alt=""
                                 style="width: 24px; height: 24px; cursor: pointer;" />
                         </a>
                     </div>
                     <div class="col">
-                        <img id="theme" src="https://www.ofiii.com/image/header/desktop/dark/sun.svg" alt=""
+                        <img id="theme"
+                            src="https://www.ofiii.com/image/header/desktop/dark/sun.svg"
+                            alt=""
                             style="width: 24px; height: 24px; cursor: pointer;" />
                     </div>
                 </div>
@@ -179,14 +173,14 @@
                 <!-- 節目表 -->
                 <div class="col-12 col-lg-4">
                     <!-- 分類 -->
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link text-gray px-3rem active" id="home-tab" data-bs-toggle="tab"
+                    <ul class="nav nav-tabs flex-nowrap row" id="myTab" role="tablist">
+                        <li class="nav-item col-6" role="presentation">
+                            <button class="nav-link text-gray col-12 active" id="home-tab" data-bs-toggle="tab"
                                 data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane"
                                 aria-selected="true">全部頻道</button>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link text-gray px-3rem" id="profile-tab" data-bs-toggle="tab"
+                        <li class="nav-item col-6" role="presentation">
+                            <button class="nav-link text-gray col-12" id="profile-tab" data-bs-toggle="tab"
                                 data-bs-target="#profile-tab-pane" type="button" role="tab"
                                 aria-controls="profile-tab-pane" aria-selected="false">頻道分類</button>
                         </li>

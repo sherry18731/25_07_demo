@@ -1,0 +1,21 @@
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.bg-solid-light {
+  background-color: #fff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.bg-solid-dark {
+  background-color: #000 !important;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.transition {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hearder {
+  background: linear-gradient(to top, rgba(15, 16, 19, 0) 0%, rgba(15, 16, 19, 0.02) 7%, rgba(15, 16, 19, 0.06) 12%, rgba(15, 16, 19, 0.12) 19%, rgba(15, 16, 19, 0.23) 28%, rgba(15, 16, 19, 0.41) 42%, rgba(15, 16, 19, 0.7) 70%, rgba(15, 16, 19, 0.9) 96%);
+}
