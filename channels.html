@@ -31,10 +31,27 @@
         font-weight: bold !important;
     }
 
-    .nav-link {
+    .px-3rem {
         padding-left: 3rem !important;
         padding-right: 3rem !important;
     }
+
+    .text-gray {
+        color: #666666;
+    }
+
+    .text-gray-100 {
+        color: #999999;
+    }
+
+
+    /* .nav-link:hover {
+        color: #fff;
+    }
+
+    button.nav-link .active {
+        color: #fff !important;
+    } */
 </style>
 
 <body>
@@ -151,7 +168,7 @@
                     <div class="d-flex">
                         <p>台視整點新聞播報。</p>
                         <a class="ms-auto" id="toggleMore" data-bs-toggle="collapse" href="#collapseMore" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
+                            aria-expanded="false" aria-controls="collapseMore">
                             顯示更多
                         </a>
                     </div>
@@ -164,20 +181,21 @@
                     <!-- 分類 -->
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            <button class="nav-link text-gray px-3rem active" id="home-tab" data-bs-toggle="tab"
                                 data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane"
                                 aria-selected="true">全部頻道</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            <button class="nav-link text-gray px-3rem" id="profile-tab" data-bs-toggle="tab"
                                 data-bs-target="#profile-tab-pane" type="button" role="tab"
                                 aria-controls="profile-tab-pane" aria-selected="false">頻道分類</button>
                         </li>
                     </ul>
-                    <!-- 全部頻道_內頁 -->
+                    <!-- 分類內頁 -->
                     <div class="tab-content" id="myTabContent">
                         <div class="py-3 tab-pane fade show active" id="all-tab-pane" role="tabpanel"
                             aria-labelledby="home-tab" tabindex="0">
+                            <!-- 全部頻道_內頁 -->
                             <ul class="d-flex justify-content-around py-2">
                                 <li class="col-3">
                                     <img class="img-fluid" style="max-height: 50px;"
@@ -236,26 +254,193 @@
                             </ul>
                         </div>
                         <!-- 頻道分類_內頁 -->
-                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                            tabindex="0">
-                            <p class="d-inline-flex gap-1">
-                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample"
-                                    role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    Link with href
-                                </a>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseExample" aria-expanded="false"
-                                    aria-controls="collapseExample">
-                                    Button with data-bs-target
-                                </button>
-                            </p>
-                            <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    Some placeholder content for the collapse component. This panel is hidden by default
-                                    but revealed when the user activates the relevant trigger.
-                                </div>
+                        <div class="tab-pane fade py-3" id="profile-tab-pane" role="tabpanel"
+                            aria-labelledby="profile-tab" tabindex="0">
+                            <!-- title -->
+                            <a class="d-flex justify-content-between text-gray-100 position-relative py-3"
+                                data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false"
+                                aria-controls="collapse1">
+                                <p class="d-flex gap-1">
+                                    <span class="fw-bold">熱門收視頻道</span>
+                                    <i class="bi bi-chevron-down position-absolute top-50 end-0 translate-middle-y"
+                                        id="icon-down"></i>
+                                </p>
+                            </a>
+                            <hr class="my-1">
+                            <!-- inner -->
+                            <div class="collapse mb-2" id="collapse1">
+                                <ul class="d-flex justify-content-around py-2">
+                                    <li class="col-3">
+                                        <img class="img-fluid" style="max-height: 50px;"
+                                            src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png"
+                                            alt="">
+                                    </li>
+                                    <li class="col-6 d-flex flex-column justify-content-center">
+                                        <p class="mb-1 text-truncate">59 台視新聞</p>
+                                        <div class="text-truncate">
+                                            <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                            <span>台視1500整點新聞</span>
+                                        </div>
+                                    </li>
+                                    <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                                </ul>
+                                <ul class="d-flex justify-content-around py-2">
+                                    <li class="col-3">
+                                        <img class="img-fluid" style="max-height: 50px;"
+                                            src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png"
+                                            alt="">
+                                    </li>
+                                    <li class="col-6 d-flex flex-column justify-content-center">
+                                        <p class="mb-1 text-truncate">59 台視新聞</p>
+                                        <div class="text-truncate">
+                                            <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                            <span>台視1500整點新聞</span>
+                                        </div>
+                                    </li>
+                                    <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                                </ul>
+                                <ul class="d-flex justify-content-around py-2">
+                                    <li class="col-3">
+                                        <img class="img-fluid" style="max-height: 50px;"
+                                            src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png"
+                                            alt="">
+                                    </li>
+                                    <li class="col-6 d-flex flex-column justify-content-center">
+                                        <p class="mb-1 text-truncate">59 台視新聞</p>
+                                        <div class="text-truncate">
+                                            <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                            <span>台視1500整點新聞</span>
+                                        </div>
+                                    </li>
+                                    <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                                </ul>
+                                <hr class="mb-2">
                             </div>
+                            <!-- end -->
+                            <!-- title -->
+                            <a class="d-flex justify-content-between text-gray-100 position-relative py-3"
+                                data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
+                                aria-controls="collapse2">
+                                <p class="d-flex gap-1">
+                                    <span class="fw-bold">電影</span>
+                                    <i class="bi bi-chevron-down position-absolute top-50 end-0 translate-middle-y"
+                                        id="icon-down"></i>
+                                </p>
+                            </a>
+                            <hr class="my-1">
+                            <!-- inner -->
+                            <div class="collapse mb-2" id="collapse2">
+                                <ul class="d-flex justify-content-around py-2">
+                                    <li class="col-3">
+                                        <img class="img-fluid" style="max-height: 50px;"
+                                            src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png"
+                                            alt="">
+                                    </li>
+                                    <li class="col-6 d-flex flex-column justify-content-center">
+                                        <p class="mb-1 text-truncate">59 台視新聞</p>
+                                        <div class="text-truncate">
+                                            <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                            <span>台視1500整點新聞</span>
+                                        </div>
+                                    </li>
+                                    <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                                </ul>
+                                <ul class="d-flex justify-content-around py-2">
+                                    <li class="col-3">
+                                        <img class="img-fluid" style="max-height: 50px;"
+                                            src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png"
+                                            alt="">
+                                    </li>
+                                    <li class="col-6 d-flex flex-column justify-content-center">
+                                        <p class="mb-1 text-truncate">59 台視新聞</p>
+                                        <div class="text-truncate">
+                                            <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                            <span>台視1500整點新聞</span>
+                                        </div>
+                                    </li>
+                                    <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                                </ul>
+                                <ul class="d-flex justify-content-around py-2">
+                                    <li class="col-3">
+                                        <img class="img-fluid" style="max-height: 50px;"
+                                            src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png"
+                                            alt="">
+                                    </li>
+                                    <li class="col-6 d-flex flex-column justify-content-center">
+                                        <p class="mb-1 text-truncate">59 台視新聞</p>
+                                        <div class="text-truncate">
+                                            <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                            <span>台視1500整點新聞</span>
+                                        </div>
+                                    </li>
+                                    <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                                </ul>
+                                <hr class="mb-2">
+                            </div>
+                            <!-- end -->
+                            <!-- title -->
+                            <a class="d-flex justify-content-between text-gray-100 position-relative py-3"
+                                data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
+                                aria-controls="collapse3">
+                                <p class="d-flex gap-1">
+                                    <span class="fw-bold">電影</span>
+                                    <i class="bi bi-chevron-down position-absolute top-50 end-0 translate-middle-y"
+                                        id="icon-down"></i>
+                                </p>
+                            </a>
+                            <hr class="my-1">
+                            <!-- inner -->
+                            <div class="collapse mb-2" id="collapse3">
+                                <ul class="d-flex justify-content-around py-2">
+                                    <li class="col-3">
+                                        <img class="img-fluid" style="max-height: 50px;"
+                                            src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png"
+                                            alt="">
+                                    </li>
+                                    <li class="col-6 d-flex flex-column justify-content-center">
+                                        <p class="mb-1 text-truncate">59 台視新聞</p>
+                                        <div class="text-truncate">
+                                            <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                            <span>台視1500整點新聞</span>
+                                        </div>
+                                    </li>
+                                    <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                                </ul>
+                                <ul class="d-flex justify-content-around py-2">
+                                    <li class="col-3">
+                                        <img class="img-fluid" style="max-height: 50px;"
+                                            src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png"
+                                            alt="">
+                                    </li>
+                                    <li class="col-6 d-flex flex-column justify-content-center">
+                                        <p class="mb-1 text-truncate">59 台視新聞</p>
+                                        <div class="text-truncate">
+                                            <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                            <span>台視1500整點新聞</span>
+                                        </div>
+                                    </li>
+                                    <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                                </ul>
+                                <ul class="d-flex justify-content-around py-2">
+                                    <li class="col-3">
+                                        <img class="img-fluid" style="max-height: 50px;"
+                                            src="https://p-cdnstatic.svc.litv.tv/pics/logo_litv_4gtv-4gtv051_tv.png"
+                                            alt="">
+                                    </li>
+                                    <li class="col-6 d-flex flex-column justify-content-center">
+                                        <p class="mb-1 text-truncate">59 台視新聞</p>
+                                        <div class="text-truncate">
+                                            <span class="badge text-bg-warning fs-xxs p-1">HD</span>
+                                            <span>台視1500整點新聞</span>
+                                        </div>
+                                    </li>
+                                    <li class="align-self-center"><i class="bi bi-list fs-3"></i></li>
+                                </ul>
+                                <hr class="mb-2">
+                            </div>
+                            <!-- end --> 
                         </div>
+
                     </div>
                 </div>
             </div>
