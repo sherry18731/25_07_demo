@@ -1,3 +1,4 @@
+// theme
 const html = document.getElementById("htmlPage");
 const logo = document.getElementById("logo");
 const footerLogo = document.getElementById("footer-logo");
@@ -86,41 +87,6 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
-// swiper2.on('slideChange', function () {
-//   const activeIndex = swiper2.realIndex;
-//   const thumbnailSlides = document.querySelectorAll('.mySwiper .swiper-slide');
-//   const activeThumb = thumbnailSlides[activeIndex];
-
-//   if (activeThumb) {
-//     activeThumb.scrollIntoView({
-//       behavior: 'smooth',
-//       inline: 'start',
-//       block: 'nearest'
-//     });
-//   }
-// });
-
-// swiper2.on('slideChange', function () {
-//   const realIndex = swiper2.realIndex;
-
-//   // 找出目前畫面中，data-swiper-slide-index === realIndex 的縮圖
-//   const thumbnailWrapper = document.querySelector('.mySwiper .swiper-wrapper');
-//   const thumbnailSlides = document.querySelectorAll('.mySwiper .swiper-slide');
-
-//   const activeThumb = Array.from(thumbnailSlides).find(slide => {
-//     return parseInt(slide.dataset.swiperSlideIndex) === realIndex;
-//   });
-
-//   if (activeThumb && thumbnailWrapper) {
-//     // 計算 offsetLeft 使該縮圖貼齊左側
-//     const scrollAmount = activeThumb.offsetLeft;
-//     thumbnailWrapper.scrollTo({
-//       left: scrollAmount,
-//       behavior: 'smooth'
-//     });
-//   }
-// });
-
 
 var swiper = new Swiper(".mySwiperMobile", {
   loop: true,
@@ -149,13 +115,3 @@ document.addEventListener('click', function (event) {
     new bootstrap.Collapse(navbarCollapse).hide(); // 手動關閉 navbar
   }
 });
-
-// const navbar = document.getElementById("mainNavbar");
-
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY > 10) {
-//     navbar.classList.add("navbar-scrolled");
-//   } else {
-//     navbar.classList.remove("navbar-scrolled");
-//   }
-// });

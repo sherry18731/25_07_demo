@@ -1,0 +1,57 @@
+body {
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+/* font style */
+
+.fs-xs {
+    font-size: 16px;
+}
+
+@media (max-width: 500px) {
+    .fs-xs {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .fs-xs {
+        font-size: 12px !important;
+    }
+}
+
+.fs-xxs {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.forn-poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* font color */
+
+.text-gray {
+    color: #666666;
+}
+
+.text-gray-100 {
+    color: #999999;
+}
