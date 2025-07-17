@@ -1,12 +1,12 @@
 /* base */
-@import "/css/base/reset.css";
-@import "/css/base/root.css";
-@import "/css/base/fontStyle.css";
+@import "./css/base/reset.css";
+@import "./css/base/root.css";
+@import "./css/base/fontStyle.css";
 
-/* layout */
-@import "/css/layout/header.css";
+/* layout. */
+@import "./css/layout/header.css";
 
 /* helpers */
-@import "/css/helpers/swiper.css";
-@import "/css/helpers/helper.css";
+@import "./css/helpers/swiper.css";
+@import "./css/helpers/helper.css";
 
