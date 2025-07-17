@@ -1,0 +1,26 @@
+.li-box {
+    padding: 1rem 0px 1rem 15px;
+    margin-left: 5px;
+    border-left: 1px solid var(--bs-body-color);
+    position: relative;
+    display: block;
+    color: var(--bs-body-color);
+}
+
+.li-box:hover {
+    color: hsl(from var(--base-color) h s l);
+} 
+
+.li-box::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--border-color-primary);
+    border-radius: 50%;
+    background-color: var(--bs-body-color);
+}
+
