@@ -26,6 +26,24 @@
     .bi::before {
         font-weight: bold !important;
     }
+
+    table,
+    th,
+    td {
+        border: 1px solid #dee2e6;
+        line-height: 1.8rem;
+    }
+
+    td {
+        
+        position: relative;
+    }
+
+    td::after {
+        content: "1080p";
+        position: absolute;
+        right: 10px;
+    }
 </style>
 
 <body>
@@ -33,7 +51,7 @@
     <nav id="mainHeader" class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="mainNavbar">
         <div class="container-xxl">
             <div class="d-flex flex-row-reverse align-items-center">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./index.html">
                     <img id="logo" src="https://magichour.app/images/site/temporary/logo.svg" alt=""
                         style="width: auto; height: 45px;">
                 </a>
@@ -60,25 +78,25 @@
                 <ul class="navbar-nav pb-3 pb-lg-0">
                     <li class="nav-item">
                         <div class="d-flex align-items-center">
-                            <a class="nav-link active" aria-current="page" href="#">推薦</a>
+                            <a class="nav-link active" aria-current="page" href="/channels.html">推薦</a>
                             <i class="bi bi-chevron-right d-lg-none"></i>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="d-flex align-items-center">
-                            <a class="nav-link" aria-current="page" href="#">世界末日來一夏</a>
+                            <a class="nav-link" aria-current="page" href="/channels.html">世界末日來一夏</a>
                             <i class="bi bi-chevron-right d-lg-none"></i>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="d-flex align-items-center">
-                            <a class="nav-link" aria-current="page" href="#">電視頻道</a>
+                            <a class="nav-link" aria-current="page" href="/channels.html">電視頻道</a>
                             <i class="bi bi-chevron-right d-lg-none"></i>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="d-flex align-items-center">
-                            <a class="nav-link" aria-current="page" href="#">戲劇</a>
+                            <a class="nav-link" aria-current="page" href="/channels.html">戲劇</a>
                             <i class="bi bi-chevron-right d-lg-none"></i>
                         </div>
                     </li>
@@ -420,7 +438,7 @@
             </div>
         </div>
 
-        <section class="py-4">
+        <section class="py-0 py-md-4">
             <div class="container">
                 <!-- 頻道介紹 -->
                 <div class="py-2">
@@ -533,22 +551,40 @@
 
                         </div>
                         <!-- 頻道分類_內頁 -->
-                        <div class="tab-pane fade py-3" id="list-tab-pane" role="tabpanel" aria-labelledby="list-tab"
+                        <div class="tab-pane fade pb-3" id="list-tab-pane" role="tabpanel" aria-labelledby="list-tab"
                             tabindex="0">
-                            <!-- title -->
-                            <a class="d-flex justify-content-between text-gray-100 position-relative py-3"
-                                data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
-                                aria-controls="collapse2">
-                                <p class="d-flex gap-1">
-                                    <span class="fw-bold">電影</span>
-                                    <i class="bi bi-chevron-down position-absolute top-50 end-0 translate-middle-y"
-                                        id="icon-down"></i>
-                                </p>
-                            </a>
-                            <hr class="my-1">
-                            <!-- inner -->
-                            <div class="collapse mb-2" id="collapse2">
-
+                            <div class="d-flex pb-4">
+                                <!-- active class : btn-warning -->
+                                <button type="button" class="btn btn-warning me-3">依序分類</button>
+                                <!-- unactive class : btn-outline-warning -->
+                                <button type="button" class="btn btn-outline-warning">分類排序</button>
+                            </div>
+                            <div class="row row-cols-1 row-cols-lg-4">
+                                <div class="col">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr class="table-active">
+                                                <th class="text-center w-25" scope="col">頻道</th>
+                                                <th class="text-center" scope="col">頻道名稱</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-center">1</th>
+                                                <td>台視</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center">2</th>
+                                                <td>台視</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center">3</th>
+                                                <td>台視</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
                             </div>
                             <!-- end -->
                         </div>

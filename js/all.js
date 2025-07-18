@@ -17,7 +17,7 @@ function toggleTheme() {
 
   if (isDark) {
     html.setAttribute("data-bs-theme", "dark");
-    logo.src = "/image/light/logo.svg";
+    logo.src = "https://magichour.app/images/site/temporary/logo.svg";
     search.src = "https://www.ofiii.com/image/header/desktop/dark/search.svg";
     media.src = "https://www.ofiii.com/image/header/desktop/dark/media.svg";
     download.src = "https://www.ofiii.com/image/header/desktop/dark/download.svg";
@@ -28,7 +28,7 @@ function toggleTheme() {
     proveLgWeb.src = "https://www.ofiii.com/image/footer/desktop/dark/ott.png";
   } else {
     html.setAttribute("data-bs-theme", "light");
-    logo.src = "/image/light/logo.svg";
+    logo.src = "https://magichour.app/images/site/temporary/logo.svg";
     search.src = "https://www.ofiii.com/image/header/desktop/light/search.svg";
     media.src = "https://www.ofiii.com/image/header/desktop/light/media.svg";
     download.src = "https://www.ofiii.com/image/header/desktop/light/download.svg";
@@ -51,7 +51,7 @@ var swiper = new Swiper(".mySwiper", {
   loop: true,
   // multipleActiveThumbs: true,
   spaceBetween: 10,
-  centeredSlides: true,
+  // centeredSlides: true,
   slidesPerView: 'auto',
   // slidesPerView: 7.5,
   breakpoints: {
