@@ -24,3 +24,29 @@
     background-color: var(--bs-body-color);
 }
 
+.li-box-atcive {
+    color: hsl(from var(--base-color) h s l);
+}
+
+.li-box-atcive::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--border-color-primary);
+    border-radius: 50%;
+    background-color: var(--base-color);
+}
+
+.w-25-75 {
+    width: 25%;
+}
+
+@media (max-width: 500px) {
+    .w-25-75 {
+        width: 75%;
+    }
+}
