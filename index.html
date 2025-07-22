@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark" id="htmlPage">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- import bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- import css -->
     <link rel="stylesheet" href="./css/all.css">
     <title>Document</title>
 </head>
+
 <body>
     <!-- header -->
     <nav id="mainHeader" class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="mainNavbar">
-        <div class="container-xxl">
+        <div class="container px-3">
             <div class="d-flex flex-row-reverse align-items-center">
                 <a class="navbar-brand" href="./index.html">
                     <img id="logo" src="https://magichour.app/images/site/temporary/logo.svg" alt=""
@@ -40,36 +44,115 @@
                             class="position-absolute" />
                     </span>
                 </div>
-                <div class="d-lg-none pb-3 my-3 border-bottom">
+                <div class="d-lg-none pb-3 mt-3 mb-2 border-bottom">
                     <div class="d-flex">
                         <button class="btn btn-secondary rounded-pill me-3">下載 APP</button>
                         <button class="btn btn-secondary rounded-pill">下載 APP</button>
                     </div>
                 </div>
-                <ul class="navbar-nav pb-3 pb-lg-0">
-                    <li class="nav-item">
-                        <div class="d-flex align-items-center">
-                            <a class="nav-link active" aria-current="page" href="/channels.html">推薦</a>
-                            <i class="bi bi-chevron-right d-lg-none"></i>
-                        </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2 active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            推薦
+                        </a>
+                        <ul class="dropdown-menu p-3">
+                            <li>
+                                <div class="row">
+                                    <a href="#" class="col nav-link fs-5 p-3">
+                                        <span>推薦首頁</span>
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- 這裡的內容自動會分成指定的欄數 -->
+                            <li>
+                                <div class="column-c-2">
+                                    <div class="col-4">
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae inventore tenetur accusamus labore, molestias nemo.</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <div class="d-flex align-items-center">
-                            <a class="nav-link" aria-current="page" href="/channels.html">世界末日來一夏</a>
-                            <i class="bi bi-chevron-right d-lg-none"></i>
-                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            電視頻道
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item py-3" href="#">電視頻道1</a></li>
+                            <li><a class="dropdown-item py-3" href="#">電視頻道2</a></li>
+                            <li><a class="dropdown-item py-3" href="#">電視頻道3</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <div class="d-flex align-items-center">
-                            <a class="nav-link" aria-current="page" href="/channels.html">電視頻道</a>
-                            <i class="bi bi-chevron-right d-lg-none"></i>
-                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            戲劇
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item py-3" href="#">戲劇1</a></li>
+                            <li><a class="dropdown-item py-3" href="#">戲劇2</a></li>
+                            <li><a class="dropdown-item py-3" href="#">戲劇3</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <div class="d-flex align-items-center">
-                            <a class="nav-link" aria-current="page" href="/channels.html">戲劇</a>
-                            <i class="bi bi-chevron-right d-lg-none"></i>
-                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            電影
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item py-3" href="#">電影1</a></li>
+                            <li><a class="dropdown-item py-3" href="#">電影2</a></li>
+                            <li><a class="dropdown-item py-3" href="#">電影3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            更多
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item py-3" href="#">更多1</a></li>
+                            <li><a class="dropdown-item py-3" href="#">更多2</a></li>
+                            <li><a class="dropdown-item py-3" href="#">更多3</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -101,7 +184,7 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- layout -->
     <div class="layout" style="height: 72px;"></div>
 
@@ -113,7 +196,8 @@
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299119216850c1ef10127.jpg" />
                     <div class="position-absolute" style="inset: 50% 0 0 8% ;">
                         <div class="d-flex flex-column align-items-start">
-                            <p class="fs-5 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            <p class="fs-5 mb-2"
+                                style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
                                 賣胭脂鬥奸臣，喬九的逆襲路，從來不是靠男人！
                             </p>
                             <p style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
@@ -129,7 +213,8 @@
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299119216850c1ef10127.jpg" />
                     <div class="position-absolute" style="inset: 50% 0 0 8% ;">
                         <div class="d-flex flex-column align-items-start">
-                            <p class="fs-5 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            <p class="fs-5 mb-2"
+                                style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
                                 賣胭脂鬥奸臣，喬九的逆襲路，從來不是靠男人！
                             </p>
                             <p style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
@@ -145,7 +230,8 @@
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299119216850c1ef10127.jpg" />
                     <div class="position-absolute" style="inset: 50% 0 0 8% ;">
                         <div class="d-flex flex-column align-items-start">
-                            <p class="fs-5 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            <p class="fs-5 mb-2"
+                                style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
                                 賣胭脂鬥奸臣，喬九的逆襲路，從來不是靠男人！
                             </p>
                             <p style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
@@ -161,7 +247,8 @@
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299119216850c1ef10127.jpg" />
                     <div class="position-absolute" style="inset: 50% 0 0 8% ;">
                         <div class="d-flex flex-column align-items-start">
-                            <p class="fs-5 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            <p class="fs-5 mb-2"
+                                style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
                                 賣胭脂鬥奸臣，喬九的逆襲路，從來不是靠男人！
                             </p>
                             <p style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
@@ -177,7 +264,8 @@
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299119216850c1ef10127.jpg" />
                     <div class="position-absolute" style="inset: 50% 0 0 8% ;">
                         <div class="d-flex flex-column align-items-start">
-                            <p class="fs-5 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            <p class="fs-5 mb-2"
+                                style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
                                 賣胭脂鬥奸臣，喬九的逆襲路，從來不是靠男人！
                             </p>
                             <p style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
@@ -193,7 +281,8 @@
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299119216850c1ef10127.jpg" />
                     <div class="position-absolute" style="inset: 50% 0 0 8% ;">
                         <div class="d-flex flex-column align-items-start">
-                            <p class="fs-5 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            <p class="fs-5 mb-2"
+                                style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
                                 賣胭脂鬥奸臣，喬九的逆襲路，從來不是靠男人！
                             </p>
                             <p style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
@@ -209,7 +298,8 @@
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299119216850c1ef10127.jpg" />
                     <div class="position-absolute" style="inset: 50% 0 0 8% ;">
                         <div class="d-flex flex-column align-items-start">
-                            <p class="fs-5 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            <p class="fs-5 mb-2"
+                                style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
                                 賣胭脂鬥奸臣，喬九的逆襲路，從來不是靠男人！
                             </p>
                             <p style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
@@ -225,7 +315,8 @@
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299119216850c1ef10127.jpg" />
                     <div class="position-absolute" style="inset: 50% 0 0 8% ;">
                         <div class="d-flex flex-column align-items-start">
-                            <p class="fs-5 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            <p class="fs-5 mb-2"
+                                style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
                                 賣胭脂鬥奸臣，喬九的逆襲路，從來不是靠男人！
                             </p>
                             <p style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
@@ -241,7 +332,8 @@
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299119216850c1ef10127.jpg" />
                     <div class="position-absolute" style="inset: 50% 0 0 8% ;">
                         <div class="d-flex flex-column align-items-start">
-                            <p class="fs-5 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            <p class="fs-5 mb-2"
+                                style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
                                 賣胭脂鬥奸臣，喬九的逆襲路，從來不是靠男人！
                             </p>
                             <p style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
@@ -257,7 +349,8 @@
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299119216850c1ef10127.jpg" />
                     <div class="position-absolute" style="inset: 50% 0 0 8% ;">
                         <div class="d-flex flex-column align-items-start">
-                            <p class="fs-5 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            <p class="fs-5 mb-2"
+                                style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
                                 賣胭脂鬥奸臣，喬九的逆襲路，從來不是靠男人！
                             </p>
                             <p style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
@@ -320,81 +413,91 @@
                 <div class="swiper-slide">
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299766756850c1f5405e3.jpg" />
                     <!-- mask -->
-                    <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                    style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                        style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                     </div>
                     <div class="position-absolute bottom-0 start-0 ps-4 pb-2 w-80p">
-                        <p class="text-start fw-bold fs-14 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
-                                喬九的逆襲路，從來不是靠男人！
-                            </p>
-                        <p class="text-start fw-bold fs-14 ellipsis" style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
-                                喬九與未婚夫爭論劇情無果後，決定自己改寫小說...
-                            </p>
+                        <p class="text-start fw-bold fs-14 mb-2"
+                            style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            喬九的逆襲路，從來不是靠男人！
+                        </p>
+                        <p class="text-start fw-bold fs-14 ellipsis"
+                            style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            喬九與未婚夫爭論劇情無果後，決定自己改寫小說...
+                        </p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299766756850c1f5405e3.jpg" />
                     <!-- mask -->
-                    <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                    style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                        style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                     </div>
                     <div class="position-absolute bottom-0 start-0 ps-4 pb-2 w-80p">
-                        <p class="text-start fw-bold fs-14 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
-                                喬九的逆襲路，從來不是靠男人！
-                            </p>
-                        <p class="text-start fw-bold fs-14 ellipsis" style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
-                                喬九與未婚夫爭論劇情無果後，決定自己改寫小說...
-                            </p>
+                        <p class="text-start fw-bold fs-14 mb-2"
+                            style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            喬九的逆襲路，從來不是靠男人！
+                        </p>
+                        <p class="text-start fw-bold fs-14 ellipsis"
+                            style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            喬九與未婚夫爭論劇情無果後，決定自己改寫小說...
+                        </p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299766756850c1f5405e3.jpg" />
                     <!-- mask -->
-                    <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                    style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                        style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                     </div>
                     <div class="position-absolute bottom-0 start-0 ps-4 pb-2 w-80p">
-                        <p class="text-start fw-bold fs-14 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
-                                喬九的逆襲路，從來不是靠男人！
-                            </p>
-                        <p class="text-start fw-bold fs-14 ellipsis" style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
-                                喬九與未婚夫爭論劇情無果後，決定自己改寫小說...
-                            </p>
+                        <p class="text-start fw-bold fs-14 mb-2"
+                            style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            喬九的逆襲路，從來不是靠男人！
+                        </p>
+                        <p class="text-start fw-bold fs-14 ellipsis"
+                            style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            喬九與未婚夫爭論劇情無果後，決定自己改寫小說...
+                        </p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299766756850c1f5405e3.jpg" />
                     <!-- mask -->
-                    <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                    style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                        style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                     </div>
                     <div class="position-absolute bottom-0 start-0 ps-4 pb-2 w-80p">
-                        <p class="text-start fw-bold fs-14 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
-                                喬九的逆襲路，從來不是靠男人！
-                            </p>
-                        <p class="text-start fw-bold fs-14 ellipsis" style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
-                                喬九與未婚夫爭論劇情無果後，決定自己改寫小說...
-                            </p>
+                        <p class="text-start fw-bold fs-14 mb-2"
+                            style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            喬九的逆襲路，從來不是靠男人！
+                        </p>
+                        <p class="text-start fw-bold fs-14 ellipsis"
+                            style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            喬九與未婚夫爭論劇情無果後，決定自己改寫小說...
+                        </p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="https://p-cdnstatic.svc.litv.tv/pics/program/175012299766756850c1f5405e3.jpg" />
                     <!-- mask -->
-                    <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                    style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                        style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                     </div>
                     <div class="position-absolute bottom-0 start-0 ps-4 pb-2 w-80p">
-                        <p class="text-start fw-bold fs-14 mb-2" style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
-                                喬九的逆襲路，從來不是靠男人！
-                            </p>
-                        <p class="text-start fw-bold fs-14 ellipsis" style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
-                                喬九與未婚夫爭論劇情無果後，決定自己改寫小說...
-                            </p>
+                        <p class="text-start fw-bold fs-14 mb-2"
+                            style="color: rgb(255 205 35); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            喬九的逆襲路，從來不是靠男人！
+                        </p>
+                        <p class="text-start fw-bold fs-14 ellipsis"
+                            style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">
+                            喬九與未婚夫爭論劇情無果後，決定自己改寫小說...
+                        </p>
                     </div>
                 </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
             <div class="swiper-pagination" style="left: 43%; font-size: 12px; color: #fff; padding-bottom: 2px;"></div>
         </div>
     </section>
@@ -416,8 +519,11 @@
             <div class="col my-3 my-3">
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
-                        <div class="position-absolute top-0 start-50 translate-middle badge border border-0 bg-danger p-1 fs-6">LIVE</div>
-                        <img src="https://p-cdnstatic.litv.tv/pics/program/16690245091733637b4afda41c4.jpg" class="card-img-top rounded" alt="...">
+                        <div
+                            class="position-absolute top-0 start-50 translate-middle badge border border-0 bg-danger p-1 fs-6">
+                            LIVE</div>
+                        <img src="https://p-cdnstatic.litv.tv/pics/program/16690245091733637b4afda41c4.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">59 台視新聞</h5>
                             <span class="fs-xs text-secondary">17:00</span>
@@ -429,8 +535,11 @@
             <div class="col my-3">
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
-                        <div class="position-absolute top-0 start-50 translate-middle badge border border-0 bg-danger p-1 fs-6">LIVE</div>
-                        <img src="https://p-cdnstatic.litv.tv/pics/program/16690245091733637b4afda41c4.jpg" class="card-img-top rounded" alt="...">
+                        <div
+                            class="position-absolute top-0 start-50 translate-middle badge border border-0 bg-danger p-1 fs-6">
+                            LIVE</div>
+                        <img src="https://p-cdnstatic.litv.tv/pics/program/16690245091733637b4afda41c4.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">59 台視新聞</h5>
                             <span class="fs-xs text-secondary">17:00</span>
@@ -442,8 +551,11 @@
             <div class="col my-3">
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
-                        <div class="position-absolute top-0 start-50 translate-middle badge border border-0 bg-danger p-1 fs-6">LIVE</div>
-                        <img src="https://p-cdnstatic.litv.tv/pics/program/16690245091733637b4afda41c4.jpg" class="card-img-top rounded" alt="...">
+                        <div
+                            class="position-absolute top-0 start-50 translate-middle badge border border-0 bg-danger p-1 fs-6">
+                            LIVE</div>
+                        <img src="https://p-cdnstatic.litv.tv/pics/program/16690245091733637b4afda41c4.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">59 台視新聞</h5>
                             <span class="fs-xs text-secondary">17:00</span>
@@ -455,8 +567,11 @@
             <div class="col my-3">
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
-                        <div class="position-absolute top-0 start-50 translate-middle badge border border-0 bg-danger p-1 fs-6">LIVE</div>
-                        <img src="https://p-cdnstatic.litv.tv/pics/program/16690245091733637b4afda41c4.jpg" class="card-img-top rounded" alt="...">
+                        <div
+                            class="position-absolute top-0 start-50 translate-middle badge border border-0 bg-danger p-1 fs-6">
+                            LIVE</div>
+                        <img src="https://p-cdnstatic.litv.tv/pics/program/16690245091733637b4afda41c4.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">59 台視新聞</h5>
                             <span class="fs-xs text-secondary">17:00</span>
@@ -468,8 +583,11 @@
             <div class="col my-3">
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
-                        <div class="position-absolute top-0 start-50 translate-middle badge border border-0 bg-danger p-1 fs-6">LIVE</div>
-                        <img src="https://p-cdnstatic.litv.tv/pics/program/16690245091733637b4afda41c4.jpg" class="card-img-top rounded" alt="...">
+                        <div
+                            class="position-absolute top-0 start-50 translate-middle badge border border-0 bg-danger p-1 fs-6">
+                            LIVE</div>
+                        <img src="https://p-cdnstatic.litv.tv/pics/program/16690245091733637b4afda41c4.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">59 台視新聞</h5>
                             <span class="fs-xs text-secondary">17:00</span>
@@ -481,8 +599,11 @@
             <div class="col my-3">
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
-                        <div class="position-absolute top-0 start-50 translate-middle badge border border-0 bg-danger p-1 fs-6">LIVE</div>
-                        <img src="https://p-cdnstatic.litv.tv/pics/program/16690245091733637b4afda41c4.jpg" class="card-img-top rounded" alt="...">
+                        <div
+                            class="position-absolute top-0 start-50 translate-middle badge border border-0 bg-danger p-1 fs-6">
+                            LIVE</div>
+                        <img src="https://p-cdnstatic.litv.tv/pics/program/16690245091733637b4afda41c4.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">59 台視新聞</h5>
                             <span class="fs-xs text-secondary">17:00</span>
@@ -526,15 +647,19 @@
                     <div class="card content_item border-0">
                         <div class="position-relative">
                             <!-- tag -->
-                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
+                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                                style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
                             <!-- img -->
-                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg" class="card-img-top rounded-1" alt="..." >
+                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg"
+                                class="card-img-top rounded-1" alt="...">
                             <!-- mask -->
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                            style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                                style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                             </div>
                             <!-- tag -->
-                            <div class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">1</div>
+                            <div
+                                class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">
+                                1</div>
                         </div>
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">怪獸8號 (第二季)</h5>
@@ -548,15 +673,19 @@
                     <div class="card content_item border-0">
                         <div class="position-relative">
                             <!-- tag -->
-                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
+                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                                style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
                             <!-- img -->
-                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg" class="card-img-top rounded-1" alt="..." >
+                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg"
+                                class="card-img-top rounded-1" alt="...">
                             <!-- mask -->
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                            style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                                style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                             </div>
                             <!-- tag -->
-                            <div class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">1</div>
+                            <div
+                                class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">
+                                1</div>
                         </div>
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">怪獸8號 (第二季)</h5>
@@ -570,15 +699,19 @@
                     <div class="card content_item border-0">
                         <div class="position-relative">
                             <!-- tag -->
-                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
+                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                                style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
                             <!-- img -->
-                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg" class="card-img-top rounded-1" alt="..." >
+                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg"
+                                class="card-img-top rounded-1" alt="...">
                             <!-- mask -->
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                            style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                                style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                             </div>
                             <!-- tag -->
-                            <div class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">1</div>
+                            <div
+                                class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">
+                                1</div>
                         </div>
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">怪獸8號 (第二季)</h5>
@@ -592,15 +725,19 @@
                     <div class="card content_item border-0">
                         <div class="position-relative">
                             <!-- tag -->
-                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
+                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                                style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
                             <!-- img -->
-                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg" class="card-img-top rounded-1" alt="..." >
+                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg"
+                                class="card-img-top rounded-1" alt="...">
                             <!-- mask -->
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                            style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                                style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                             </div>
                             <!-- tag -->
-                            <div class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">1</div>
+                            <div
+                                class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">
+                                1</div>
                         </div>
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">怪獸8號 (第二季)</h5>
@@ -614,15 +751,19 @@
                     <div class="card content_item border-0">
                         <div class="position-relative">
                             <!-- tag -->
-                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
+                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                                style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
                             <!-- img -->
-                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg" class="card-img-top rounded-1" alt="..." >
+                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg"
+                                class="card-img-top rounded-1" alt="...">
                             <!-- mask -->
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                            style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                                style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                             </div>
                             <!-- tag -->
-                            <div class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">1</div>
+                            <div
+                                class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">
+                                1</div>
                         </div>
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">怪獸8號 (第二季)</h5>
@@ -636,15 +777,19 @@
                     <div class="card content_item border-0">
                         <div class="position-relative">
                             <!-- tag -->
-                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
+                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                                style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
                             <!-- img -->
-                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg" class="card-img-top rounded-1" alt="..." >
+                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg"
+                                class="card-img-top rounded-1" alt="...">
                             <!-- mask -->
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                            style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                                style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                             </div>
                             <!-- tag -->
-                            <div class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">1</div>
+                            <div
+                                class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">
+                                1</div>
                         </div>
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">怪獸8號 (第二季)</h5>
@@ -658,15 +803,19 @@
                     <div class="card content_item border-0">
                         <div class="position-relative">
                             <!-- tag -->
-                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
+                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                                style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
                             <!-- img -->
-                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg" class="card-img-top rounded-1" alt="..." >
+                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg"
+                                class="card-img-top rounded-1" alt="...">
                             <!-- mask -->
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                            style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                                style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                             </div>
                             <!-- tag -->
-                            <div class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">1</div>
+                            <div
+                                class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">
+                                1</div>
                         </div>
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">怪獸8號 (第二季)</h5>
@@ -680,15 +829,19 @@
                     <div class="card content_item border-0">
                         <div class="position-relative">
                             <!-- tag -->
-                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
+                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                                style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
                             <!-- img -->
-                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg" class="card-img-top rounded-1" alt="..." >
+                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg"
+                                class="card-img-top rounded-1" alt="...">
                             <!-- mask -->
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                            style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                                style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                             </div>
                             <!-- tag -->
-                            <div class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">1</div>
+                            <div
+                                class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">
+                                1</div>
                         </div>
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">怪獸8號 (第二季)</h5>
@@ -702,15 +855,19 @@
                     <div class="card content_item border-0">
                         <div class="position-relative">
                             <!-- tag -->
-                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
+                            <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                                style="background-color: #46a569; border-radius: 0 4px 0 0;">同步</div>
                             <!-- img -->
-                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg" class="card-img-top rounded-1" alt="..." >
+                            <img src="https://p-cdnstatic.svc.litv.tv/pics/70376-000000-678932-S.jpg"
+                                class="card-img-top rounded-1" alt="...">
                             <!-- mask -->
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1" 
-                            style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-1"
+                                style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.5));">
                             </div>
                             <!-- tag -->
-                            <div class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">1</div>
+                            <div
+                                class="position-absolute bottom-0 end-0 badge border-0 rounded-0 p-2 fs-1 fw-900 forn-poppins">
+                                1</div>
                         </div>
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">怪獸8號 (第二季)</h5>
@@ -780,7 +937,8 @@
             <div class="col my-3">
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
-                        <img src="https://p-cdnstatic.svc.litv.tv/pics/66708-000000-581551-S.jpg" class="card-img-top rounded" alt="...">
+                        <img src="https://p-cdnstatic.svc.litv.tv/pics/66708-000000-581551-S.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">以愛為營</h5>
                             <p class="fs-xs text-secondary mt-3">全 36 集</p>
@@ -791,7 +949,8 @@
             <div class="col my-3">
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
-                        <img src="https://p-cdnstatic.svc.litv.tv/pics/66708-000000-581551-S.jpg" class="card-img-top rounded" alt="...">
+                        <img src="https://p-cdnstatic.svc.litv.tv/pics/66708-000000-581551-S.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">以愛為營</h5>
                             <p class="fs-xs text-secondary mt-3">全 36 集</p>
@@ -802,7 +961,8 @@
             <div class="col my-3">
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
-                        <img src="https://p-cdnstatic.svc.litv.tv/pics/66708-000000-581551-S.jpg" class="card-img-top rounded" alt="...">
+                        <img src="https://p-cdnstatic.svc.litv.tv/pics/66708-000000-581551-S.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">以愛為營</h5>
                             <p class="fs-xs text-secondary mt-3">全 36 集</p>
@@ -813,7 +973,8 @@
             <div class="col my-3">
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
-                        <img src="https://p-cdnstatic.svc.litv.tv/pics/66708-000000-581551-S.jpg" class="card-img-top rounded" alt="...">
+                        <img src="https://p-cdnstatic.svc.litv.tv/pics/66708-000000-581551-S.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">以愛為營</h5>
                             <p class="fs-xs text-secondary mt-3">全 36 集</p>
@@ -824,7 +985,8 @@
             <div class="col my-3">
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
-                        <img src="https://p-cdnstatic.svc.litv.tv/pics/66708-000000-581551-S.jpg" class="card-img-top rounded" alt="...">
+                        <img src="https://p-cdnstatic.svc.litv.tv/pics/66708-000000-581551-S.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">以愛為營</h5>
                             <p class="fs-xs text-secondary mt-3">全 36 集</p>
@@ -835,7 +997,8 @@
             <div class="col my-3">
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
-                        <img src="https://p-cdnstatic.svc.litv.tv/pics/66708-000000-581551-S.jpg" class="card-img-top rounded" alt="...">
+                        <img src="https://p-cdnstatic.svc.litv.tv/pics/66708-000000-581551-S.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">以愛為營</h5>
                             <p class="fs-xs text-secondary mt-3">全 36 集</p>
@@ -864,8 +1027,10 @@
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
                         <!-- tag -->
-                        <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #ff0266; border-radius: 0 4px 0 0;">新上架</div>
-                        <img src="https://p-cdnstatic.svc.litv.tv/pics/71522-000458-627841-S.jpg" class="card-img-top rounded" alt="...">
+                        <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                            style="background-color: #ff0266; border-radius: 0 4px 0 0;">新上架</div>
+                        <img src="https://p-cdnstatic.svc.litv.tv/pics/71522-000458-627841-S.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">最佳夥伴/謊言成真大聲公</h5>
                         </div>
@@ -876,8 +1041,10 @@
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
                         <!-- tag -->
-                        <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #ff0266; border-radius: 0 4px 0 0;">新上架</div>
-                        <img src="https://p-cdnstatic.svc.litv.tv/pics/71522-000458-627841-S.jpg" class="card-img-top rounded" alt="...">
+                        <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                            style="background-color: #ff0266; border-radius: 0 4px 0 0;">新上架</div>
+                        <img src="https://p-cdnstatic.svc.litv.tv/pics/71522-000458-627841-S.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">最佳夥伴/謊言成真大聲公</h5>
                         </div>
@@ -888,8 +1055,10 @@
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
                         <!-- tag -->
-                        <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #ff0266; border-radius: 0 4px 0 0;">新上架</div>
-                        <img src="https://p-cdnstatic.svc.litv.tv/pics/71522-000458-627841-S.jpg" class="card-img-top rounded" alt="...">
+                        <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                            style="background-color: #ff0266; border-radius: 0 4px 0 0;">新上架</div>
+                        <img src="https://p-cdnstatic.svc.litv.tv/pics/71522-000458-627841-S.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">最佳夥伴/謊言成真大聲公</h5>
                         </div>
@@ -900,8 +1069,10 @@
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
                         <!-- tag -->
-                        <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #ff0266; border-radius: 0 4px 0 0;">新上架</div>
-                        <img src="https://p-cdnstatic.svc.litv.tv/pics/71522-000458-627841-S.jpg" class="card-img-top rounded" alt="...">
+                        <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                            style="background-color: #ff0266; border-radius: 0 4px 0 0;">新上架</div>
+                        <img src="https://p-cdnstatic.svc.litv.tv/pics/71522-000458-627841-S.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">最佳夥伴/謊言成真大聲公</h5>
                         </div>
@@ -912,8 +1083,10 @@
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
                         <!-- tag -->
-                        <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #ff0266; border-radius: 0 4px 0 0;">新上架</div>
-                        <img src="https://p-cdnstatic.svc.litv.tv/pics/71522-000458-627841-S.jpg" class="card-img-top rounded" alt="...">
+                        <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                            style="background-color: #ff0266; border-radius: 0 4px 0 0;">新上架</div>
+                        <img src="https://p-cdnstatic.svc.litv.tv/pics/71522-000458-627841-S.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">最佳夥伴/謊言成真大聲公</h5>
                         </div>
@@ -924,8 +1097,10 @@
                 <a href="#" class="">
                     <div class="card content_item border-0 position-relative">
                         <!-- tag -->
-                        <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light" style="background-color: #ff0266; border-radius: 0 4px 0 0;">新上架</div>
-                        <img src="https://p-cdnstatic.svc.litv.tv/pics/71522-000458-627841-S.jpg" class="card-img-top rounded" alt="...">
+                        <div class="position-absolute top-0 end-0 badge border-0 p-1 px-3 fs-xxs fw-light"
+                            style="background-color: #ff0266; border-radius: 0 4px 0 0;">新上架</div>
+                        <img src="https://p-cdnstatic.svc.litv.tv/pics/71522-000458-627841-S.jpg"
+                            class="card-img-top rounded" alt="...">
                         <div class="card-body py-1 px-0">
                             <h5 class="card-title fw-bold">最佳夥伴/謊言成真大聲公</h5>
                         </div>
@@ -941,18 +1116,22 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <a class="" href="#">
-                    <img id="footer-logo" class="col-5" src="https://www.ofiii.com/image/footer/mobile/dark/logo.png" alt="">
+                    <img id="footer-logo" class="col-5" src="https://www.ofiii.com/image/footer/mobile/dark/logo.png"
+                        alt="">
                 </a>
-                <img id="prove" class="col-1" src="https://www.ofiii.com/image/footer/mobile/dark/ott.png" alt="" style="width: 48px; height: 48px;">
+                <img id="prove" class="col-1" src="https://www.ofiii.com/image/footer/mobile/dark/ott.png" alt=""
+                    style="width: 48px; height: 48px;">
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center border-bottom py-3">
                 <h6 class="mb-3">下載 ofiii APP</h6>
                 <div class="d-flex">
                     <a class="me-3" href="#">
-                        <img src="https://www.ofiii.com/image/footer/mobile/ios.png" alt="" style="width: 120px; height: 36px;">
+                        <img src="https://www.ofiii.com/image/footer/mobile/ios.png" alt=""
+                            style="width: 120px; height: 36px;">
                     </a>
                     <a href="">
-                        <img src="https://www.ofiii.com/image/footer/mobile/ios.png" alt="" style="width: 120px; height: 36px;">
+                        <img src="https://www.ofiii.com/image/footer/mobile/ios.png" alt=""
+                            style="width: 120px; height: 36px;">
                     </a>
                 </div>
             </div>
@@ -976,9 +1155,11 @@
                 <div class="col-2">
                     <div class="d-flex flex-column align-items-center">
                         <a class="d-flex flex-column align-items-center mb-4" href="#">
-                            <img id="footer-logo-web" class="col-10" src="https://www.ofiii.com/image/footer/mobile/dark/logo.png" alt="">
+                            <img id="footer-logo-web" class="col-10"
+                                src="https://www.ofiii.com/image/footer/mobile/dark/logo.png" alt="">
                         </a>
-                        <img id="prove-lg-web" class="col-6 mb-2" src="https://www.ofiii.com/image/footer/desktop/dark/ott.png" alt="">
+                        <img id="prove-lg-web" class="col-6 mb-2"
+                            src="https://www.ofiii.com/image/footer/desktop/dark/ott.png" alt="">
                         <div class="d-flex justify-content-center my-3 mb-5">
                             <i class="bi bi-facebook fs-40 me-3"></i>
                             <i class="bi bi-facebook fs-40 me-3"></i>
@@ -990,92 +1171,92 @@
                     <ul class="d-flex flex-column align-items-start gap-4">
                         <li class="fw-bold mb-3">推薦</li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        電視頻道
-                        </span></li>
+                                電視頻道
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        大家都在看🔥
-                        </span></li>
+                                大家都在看🔥
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        暑假特典！哆啦A夢到你家
-                        </span></li>
+                                暑假特典！哆啦A夢到你家
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        暑假特典！蠟筆小新大集合
-                        </span></li>
+                                暑假特典！蠟筆小新大集合
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        戲劇熱門排行榜
-                        </span></li>
+                                戲劇熱門排行榜
+                            </span></li>
                     </ul>
                     <ul class="d-flex flex-column align-items-start gap-4">
                         <li class="fw-bold mb-3">推薦</li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        電視頻道
-                        </span></li>
+                                電視頻道
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        大家都在看🔥
-                        </span></li>
+                                大家都在看🔥
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        暑假特典！哆啦A夢到你家
-                        </span></li>
+                                暑假特典！哆啦A夢到你家
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        暑假特典！蠟筆小新大集合
-                        </span></li>
+                                暑假特典！蠟筆小新大集合
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        戲劇熱門排行榜
-                        </span></li>
+                                戲劇熱門排行榜
+                            </span></li>
                     </ul>
                     <ul class="d-flex flex-column align-items-start gap-4">
                         <li class="fw-bold mb-3">推薦</li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        電視頻道
-                        </span></li>
+                                電視頻道
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        大家都在看🔥
-                        </span></li>
+                                大家都在看🔥
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        暑假特典！哆啦A夢到你家
-                        </span></li>
+                                暑假特典！哆啦A夢到你家
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        暑假特典！蠟筆小新大集合
-                        </span></li>
+                                暑假特典！蠟筆小新大集合
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        戲劇熱門排行榜
-                        </span></li>
+                                戲劇熱門排行榜
+                            </span></li>
                     </ul>
                     <ul class="d-flex flex-column align-items-start gap-4">
                         <li class="fw-bold mb-3">推薦</li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        電視頻道
-                        </span></li>
+                                電視頻道
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        大家都在看🔥
-                        </span></li>
+                                大家都在看🔥
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        暑假特典！哆啦A夢到你家
-                        </span></li>
+                                暑假特典！哆啦A夢到你家
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        暑假特典！蠟筆小新大集合
-                        </span></li>
+                                暑假特典！蠟筆小新大集合
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        戲劇熱門排行榜
-                        </span></li>
+                                戲劇熱門排行榜
+                            </span></li>
                     </ul>
                     <ul class="d-flex flex-column align-items-start gap-4">
                         <li class="fw-bold mb-3">推薦</li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        電視頻道
-                        </span></li>
+                                電視頻道
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        大家都在看🔥
-                        </span></li>
+                                大家都在看🔥
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        暑假特典！哆啦A夢到你家
-                        </span></li>
+                                暑假特典！哆啦A夢到你家
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        暑假特典！蠟筆小新大集合
-                        </span></li>
+                                暑假特典！蠟筆小新大集合
+                            </span></li>
                         <li class="text-secondary"><span class="d-inline-block text-truncate" style="max-width: 150px;">
-                        戲劇熱門排行榜
-                        </span></li>
+                                戲劇熱門排行榜
+                            </span></li>
                     </ul>
                 </div>
             </div>
@@ -1087,4 +1268,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/all.js"></script>
 </body>
+
 </html>

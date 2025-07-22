@@ -48,7 +48,7 @@
 <body>
     <!-- header -->
     <nav id="mainHeader" class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="mainNavbar">
-        <div class="container-xxl">
+        <div class="container px-3">
             <div class="d-flex flex-row-reverse align-items-center">
                 <a class="navbar-brand" href="./index.html">
                     <img id="logo" src="https://magichour.app/images/site/temporary/logo.svg" alt=""
@@ -62,42 +62,121 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="d-lg-none">
-                    <a href="#">
+                    <span>
                         <img id="theme-mobile" src="https://www.ofiii.com/image/header/desktop/dark/sun.svg" alt=""
                             style="width: 24px; height: 24px; cursor: pointer; inset: 30px 20px 80% 90%;"
                             class="position-absolute" />
-                    </a>
+                    </span>
                 </div>
-                <div class="d-lg-none pb-3 my-3 border-bottom">
+                <div class="d-lg-none pb-3 mt-3 mb-2 border-bottom">
                     <div class="d-flex">
                         <button class="btn btn-secondary rounded-pill me-3">下載 APP</button>
                         <button class="btn btn-secondary rounded-pill">下載 APP</button>
                     </div>
                 </div>
-                <ul class="navbar-nav pb-3 pb-lg-0">
-                    <li class="nav-item">
-                        <div class="d-flex align-items-center">
-                            <a class="nav-link active" aria-current="page" href="/channels.html">推薦</a>
-                            <i class="bi bi-chevron-right d-lg-none"></i>
-                        </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2 active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            推薦
+                        </a>
+                        <ul class="dropdown-menu p-3">
+                            <li>
+                                <div class="row">
+                                    <a href="#" class="col nav-link fs-5 p-3">
+                                        <span>推薦首頁</span>
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- 這裡的內容自動會分成指定的欄數 -->
+                            <li>
+                                <div class="column-c-2">
+                                    <div class="col-4">
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae inventore tenetur accusamus labore, molestias nemo.</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">推薦</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <div class="d-flex align-items-center">
-                            <a class="nav-link" aria-current="page" href="/channels.html">世界末日來一夏</a>
-                            <i class="bi bi-chevron-right d-lg-none"></i>
-                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            電視頻道
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item py-3" href="#">電視頻道1</a></li>
+                            <li><a class="dropdown-item py-3" href="#">電視頻道2</a></li>
+                            <li><a class="dropdown-item py-3" href="#">電視頻道3</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <div class="d-flex align-items-center">
-                            <a class="nav-link" aria-current="page" href="/channels.html">電視頻道</a>
-                            <i class="bi bi-chevron-right d-lg-none"></i>
-                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            戲劇
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item py-3" href="#">戲劇1</a></li>
+                            <li><a class="dropdown-item py-3" href="#">戲劇2</a></li>
+                            <li><a class="dropdown-item py-3" href="#">戲劇3</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <div class="d-flex align-items-center">
-                            <a class="nav-link" aria-current="page" href="/channels.html">戲劇</a>
-                            <i class="bi bi-chevron-right d-lg-none"></i>
-                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            電影
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item py-3" href="#">電影1</a></li>
+                            <li><a class="dropdown-item py-3" href="#">電影2</a></li>
+                            <li><a class="dropdown-item py-3" href="#">電影3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            更多
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item py-3" href="#">更多1</a></li>
+                            <li><a class="dropdown-item py-3" href="#">更多2</a></li>
+                            <li><a class="dropdown-item py-3" href="#">更多3</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>

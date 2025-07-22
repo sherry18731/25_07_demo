@@ -22,7 +22,7 @@
 
 /* nav */
 
-.nav-item {
+/* .nav-item {
   position: relative;
 }
 
@@ -37,11 +37,9 @@
 
 .nav-link.active {
   color: #0973d6;
-  /* border-bottom: #ff0266 solid 3px; */
   font-weight: bold;
 }
 
 .nav-link:hover {
   transform: scale(1.05);
-  /* color: #ff0266; */
-}
+} */

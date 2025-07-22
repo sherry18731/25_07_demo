@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" id="htmlPage">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- import css -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/pages/channels.css">
+
+    <title>Document</title>
+</head>
+<style>
+    .bi::before {
+        font-weight: bold !important;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #dee2e6;
+        line-height: 1.8rem;
+    }
+
+    td {
+        position: relative;
+    }
+
+    td::after {
+        content: "1080p";
+        position: absolute;
+        right: 10px;
+    }
+</style>
+
+<body>
+    <!-- header -->
+    <nav id="mainHeader" class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="mainNavbar">
+        <div class="container-xxl">
+            <div class="d-flex flex-row-reverse align-items-center">
+                <a class="navbar-brand" href="./index.html">
+                    <img id="logo" src="https://magichour.app/images/site/temporary/logo.svg" alt=""
+                        style="width: auto; height: 45px;">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-lg-none">
+                    <a href="#">
+                        <img id="theme-mobile" src="https://www.ofiii.com/image/header/desktop/dark/sun.svg" alt=""
+                            style="width: 24px; height: 24px; cursor: pointer; inset: 30px 20px 80% 90%;"
+                            class="position-absolute" />
+                    </a>
+                </div>
+                <div class="d-lg-none pb-3 my-3 border-bottom">
+                    <div class="d-flex">
+                        <button class="btn btn-secondary rounded-pill me-3">下載 APP</button>
+                        <button class="btn btn-secondary rounded-pill">下載 APP</button>
+                    </div>
+                </div>
+                <ul class="navbar-nav pb-3 pb-lg-0">
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center">
+                            <a class="nav-link active" aria-current="page" href="/channels.html">推薦</a>
+                            <i class="bi bi-chevron-right d-lg-none"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center">
+                            <a class="nav-link" aria-current="page" href="/channels.html">世界末日來一夏</a>
+                            <i class="bi bi-chevron-right d-lg-none"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center">
+                            <a class="nav-link" aria-current="page" href="/channels.html">電視頻道</a>
+                            <i class="bi bi-chevron-right d-lg-none"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center">
+                            <a class="nav-link" aria-current="page" href="/channels.html">戲劇</a>
+                            <i class="bi bi-chevron-right d-lg-none"></i>
+                        </div>
+                    </li>
+                </ul>
+                <div class="p-5">
+                    <h2>Responsive Display</h2>
+                    <div class="slider responsive">
+                        <div>
+                            <h3>1</h3>
+                        </div>
+                        <div>
+                            <h3>2</h3>
+                        </div>
+                        <div>
+                            <h3>3</h3>
+                        </div>
+                        <div>
+                            <h3>4</h3>
+                        </div>
+                        .....等
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-block">
+                <div class="row gx-3">
+                    <div class="col">
+                        <a href="#">
+                            <img id="search" src="https://www.ofiii.com/image/header/desktop/dark/search.svg" alt=""
+                                style="width: 24px; height: 24px; cursor: pointer;" />
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img id="media" src="https://www.ofiii.com/image/header/desktop/dark/media.svg" alt=""
+                                style="width: 24px; height: 24px; cursor: pointer;" />
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img id="download" src="https://www.ofiii.com/image/header/desktop/dark/download.svg" alt=""
+                                style="width: 24px; height: 24px; cursor: pointer;" />
+                        </a>
+                    </div>
+                    <div class="col">
+                        <img id="theme" src="https://www.ofiii.com/image/header/desktop/dark/sun.svg" alt=""
+                            style="width: 24px; height: 24px; cursor: pointer;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- layout -->
+    <div class="layout" style="height: 72px;"></div>
+
+
+
+    <script>
+        const toggleMore = document.getElementById('toggleMore');
+        const collapseEl = document.getElementById('collapseMore');
+
+        // 監聽展開事件
+        collapseEl.addEventListener('shown.bs.collapse', () => {
+            toggleMore.textContent = '顯示更少';
+        });
+
+        // 監聽收起事件
+        collapseEl.addEventListener('hidden.bs.collapse', () => {
+            toggleMore.textContent = '顯示更多';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="./js/all.js"></script>
+    <script>
+        $(".responsive").slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+
+</body>
+
+</html>

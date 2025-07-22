@@ -8,6 +8,18 @@
   width: 80%;
 }
 
+.w-130 {
+    width: 130px;
+}
+
+.column-c-2 {
+    column-count: 2;
+}
+
+.column-c-6 {
+    column-count: 6;
+}
+
 /* footer */
 .footer-bg {
   background-color: hsl(from var(--footer-bg) h s l);
