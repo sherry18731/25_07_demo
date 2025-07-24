@@ -57,25 +57,29 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints: {
     // 小於 576px (手機)
     0: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
     },
     // 小於 768px (小平板)
     576: {
-      slidesPerView: 4.5,
+      slidesPerView: 4,
     },
     // 小於 992px (一般平板)
     768: {
-      slidesPerView: 5.5,
+      slidesPerView: 5,
     },
     // 大於 992px (桌面)
     992: {
-      slidesPerView: 7.5,
+      slidesPerView: 7,
     }
   },
   freeMode: true,
   watchSlidesProgress: true,
 });
 var swiper2 = new Swiper(".mySwiper2", {
+  autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
   loop: true,
   spaceBetween: 10,
   navigation: {

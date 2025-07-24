@@ -53,5 +53,6 @@ body {
 }
 
 .text-gray-100 {
-    color: #999999;
+    /* color: #999999; */
+    color: hsl(from var(--gray-100) h s l);;
 }

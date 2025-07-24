@@ -60,41 +60,46 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="d-lg-none">
-                    <span>
+            <div class="collapse navbar-collapse offcanvas offcanvas-start w-sm-75 p-2" id="navbarNav">
+                <div class="offcanvas-header pt-1 w-100">
+                    <a class="navbar-brand" href="./index.html">
+                        <img id="logo" src="https://magichour.app/images/site/temporary/logo.svg" alt=""
+                            style="width: auto; height: 45px;">
+                    </a>
                         <img id="theme-mobile" src="https://www.ofiii.com/image/header/desktop/dark/sun.svg" alt=""
-                            style="width: 24px; height: 24px; cursor: pointer; inset: 30px 20px 80% 90%;"
-                            class="position-absolute" />
-                    </span>
+                            class="ms-auto" />
                 </div>
-                <div class="d-lg-none pb-3 mt-3 mb-2 border-bottom">
+                <div class="d-lg-none">
                     <div class="d-flex">
-                        <button class="btn btn-secondary rounded-pill me-3">下載 APP</button>
-                        <button class="btn btn-secondary rounded-pill">下載 APP</button>
+                        <button class="btn btn-secondary rounded-pill m-1">下載 APP</button>
+                        <button class="btn btn-secondary rounded-pill m-1">下載 APP</button>
                     </div>
                 </div>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle py-2 active" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            推薦
-                        </a>
-                        <ul class="dropdown-menu p-3">
-                            <li>
-                                <div class="row">
-                                    <a href="#" class="col nav-link fs-5 p-3">
-                                        <span>推薦首頁</span>
-                                        <i class="bi bi-arrow-right-short"></i>
-                                    </a>
-                                </div>
-                            </li>
-                            <!-- 這裡的內容自動會分成指定的欄數 -->
-                            <li>
-                                <div class="column-c-2">
-                                    <div class="col-4">
+                <div class="d-flex position-relative w-100 scroll-y offcanvas-body pt-1">
+
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle py-3 active" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                推薦
+                            </a>
+                            <ul class="dropdown-menu p-3">
+                                <li>
+                                    <div class="row">
+                                        <a href="#" class="col nav-link fs-5 p-3">
+                                            <span>推薦首頁</span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- 這裡的內容自動會分成指定的欄數 -->
+                                <li>
+                                    <div class="column-c-2">
                                         <div class="w-130 py-2">
-                                            <a class="nav-link text-truncate" href="#">推薦Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae inventore tenetur accusamus labore, molestias nemo.</a>
+                                            <a class="nav-link text-truncate" href="#">推薦Lorem ipsum dolor, sit amet
+                                                consectetur adipisicing elit. Molestiae inventore tenetur accusamus
+                                                labore,
+                                                molestias nemo.</a>
                                         </div>
                                         <div class="w-130 py-2">
                                             <a class="nav-link text-truncate" href="#">推薦</a>
@@ -130,55 +135,80 @@
                                             <a class="nav-link text-truncate" href="#">推薦</a>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            電視頻道
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item py-3" href="#">電視頻道1</a></li>
-                            <li><a class="dropdown-item py-3" href="#">電視頻道2</a></li>
-                            <li><a class="dropdown-item py-3" href="#">電視頻道3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            戲劇
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item py-3" href="#">戲劇1</a></li>
-                            <li><a class="dropdown-item py-3" href="#">戲劇2</a></li>
-                            <li><a class="dropdown-item py-3" href="#">戲劇3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            電影
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item py-3" href="#">電影1</a></li>
-                            <li><a class="dropdown-item py-3" href="#">電影2</a></li>
-                            <li><a class="dropdown-item py-3" href="#">電影3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            更多
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item py-3" href="#">更多1</a></li>
-                            <li><a class="dropdown-item py-3" href="#">更多2</a></li>
-                            <li><a class="dropdown-item py-3" href="#">更多3</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle py-3" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                電視頻道
+                            </a>
+                            <ul class="dropdown-menu p-3">
+                                <li>
+                                    <div class="row">
+                                        <a href="#" class="col nav-link fs-5 p-3">
+                                            <span>電視頻道首頁</span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- 這裡的內容自動會分成指定的欄數 -->
+                                <li>
+                                    <div class="column-c-4">
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">電視頻道</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">電視頻道</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">電視頻道</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">電視頻道</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">電視頻道</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">電視頻道</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">電視頻道</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">電視頻道</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">電視頻道</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">電視頻道</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">電視頻道</a>
+                                        </div>
+                                        <div class="w-130 py-2">
+                                            <a class="nav-link text-truncate" href="#">電視頻道</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle py-3" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                本地端傳送門
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item py-3" href="/index.html">首頁</a></li>
+                                <li><a class="dropdown-item py-3" href="/channels-list.html">頻道列表</a></li>
+                                <li><a class="dropdown-item py-3" href="/channels.html">頻道內頁</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="d-none d-lg-block">
                 <div class="row gx-3">
@@ -218,9 +248,9 @@
                 <!-- video -->
                 <div class="col-12 col-lg-8">
                     <div class="ratio ratio-16x9 mb-3">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZKoC4ghWcg?si=R0uRrqtn4MetcCca" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MIoLGSRTkP4?si=OWz98K0Nko__n_SJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <h2 class="fs-4 fw-bold mb-2">【公式】『ちいかわ』第259話「生地／ギョニソ」</h2>
+                    <h2 class="fs-4 fw-bold mb-2">『ちいかわ』第260話「純露／ツノ」＜7/29 (火)AM7:59まで＞</h2>
                     <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
                         <span class="fs-6 fw-bold lh-lg">台視1100台語新聞</span>
                         <div class="d-flex">
@@ -725,14 +755,16 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <a class="" href="#">
-                    <img id="footer-logo" class="col-5" src="https://www.ofiii.com/image/footer/mobile/dark/logo.png"
+                    <!-- <img id="logo" src="https://magichour.app/images/site/temporary/logo.svg" alt="" class="col-6 mb-3"
+                        style="width: auto; max-height: 65px;"> -->
+                    <img id="footer-logo" class="col-5" src="https://magichour.app/images/site/temporary/logo.svg"
                         alt="">
                 </a>
                 <img id="prove" class="col-1" src="https://www.ofiii.com/image/footer/mobile/dark/ott.png" alt=""
                     style="width: 48px; height: 48px;">
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center border-bottom py-3">
-                <h6 class="mb-3">下載 ofiii APP</h6>
+                <h6 class="mb-3">下載 APP</h6>
                 <div class="d-flex">
                     <a class="me-3" href="#">
                         <img src="https://www.ofiii.com/image/footer/mobile/ios.png" alt=""
@@ -754,19 +786,17 @@
                 <li class="border-end pe-2 me-3"><span>版權與商標</span></li>
                 <li><span>版權與商標</span></li>
             </ul>
-            <p class="text-center text-secondary fs-xxs mt-3">Copyright © 2025 ofiii 歐飛 All Rights Reserved</p>
+            <p class="text-center text-secondary fs-xxs mt-3">Copyright © 2025 挖趣TV All Rights Reserved</p>
         </div>
     </footer>
     <!-- web footer -->
     <footer class="py-5 d-none d-lg-block footer-bg">
         <div class="container-xxl">
             <div class="row border-bottom pb-2 mb-5">
-                <div class="col-2">
+                <div class="col-2 px-2">
                     <div class="d-flex flex-column align-items-center">
-                        <a class="d-flex flex-column align-items-center mb-4" href="#">
-                            <img id="footer-logo-web" class="col-10"
-                                src="https://www.ofiii.com/image/footer/mobile/dark/logo.png" alt="">
-                        </a>
+                        <img id="logo" src="https://magichour.app/images/site/temporary/logo.svg" alt="" class="col-6 mb-3"
+                        style="width: auto; max-height: 65px;">
                         <img id="prove-lg-web" class="col-6 mb-2"
                             src="https://www.ofiii.com/image/footer/desktop/dark/ott.png" alt="">
                         <div class="d-flex justify-content-center my-3 mb-5">
@@ -869,11 +899,12 @@
                     </ul>
                 </div>
             </div>
-            <p class="text-center text-secondary fs-xs mt-3">Copyright © 2025 ofiii 歐飛 All Rights Reserved</p>
+            <p class="text-center text-secondary fs-xs mt-3">Copyright © 2025 挖趣TV All Rights Reserved</p>
         </div>
     </footer>
 
     <script>
+        // channels page use
         const toggleMore = document.getElementById('toggleMore');
         const collapseEl = document.getElementById('collapseMore');
 
